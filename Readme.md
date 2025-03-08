@@ -5,12 +5,12 @@ Overview
 This project builds a real-time financial market data pipeline to fetch, process, and analyze stock market data using Azure services and visualize it in Power BI.
 
 Key Features
-✅ Live Data Streaming: Fetches stock market data using the Yahoo Finance API and streams it via Azure Event Hub.
-✅ Real-Time Processing: Azure Stream Analytics processes incoming data for analysis.
-✅ Cloud Storage & Querying: Processed data is stored in Azure Data Lake Storage (ADLS) and CosmosDB for structured querying.
-✅ Insights & Visualization: Power BI provides real-time dashboards for financial market trends.
-✅ Automation & Orchestration: Apache Airflow automates and schedules pipeline tasks.
-✅ Containerized Deployment: The entire setup is Dockerized for easy deployment and scalability.
+* Live Data Streaming: Fetches stock market data using the Yahoo Finance API and streams it via Azure Event Hub.
+* Real-Time Processing: Azure Stream Analytics processes incoming data for analysis.
+* Cloud Storage & Querying: Processed data is stored in Azure Data Lake Storage (ADLS) and CosmosDB for structured querying.
+* Insights & Visualization: Power BI provides real-time dashboards for financial market trends.
+* Automation & Orchestration: Apache Airflow automates and schedules pipeline tasks.
+* Containerized Deployment: The entire setup is Dockerized for easy deployment and scalability.
 
 
 ## Architecture
@@ -44,8 +44,8 @@ Key Features
 ### Steps
 1. Clone the repository:
    ```sh
-   git clone <repo-link>
-   cd <repo-folder>
+   gh repo clone DewanshVk/Financial-Market-Data-Pipeline-
+   cd Financial-Market-Data-Pipeline-
    ```
 2. Start Event Hub setup (modify config as needed).
 3. Deploy the Stream Analytics job in Azure.
@@ -67,7 +67,7 @@ Visual representations of key components are located in the `screenshots/` direc
 
 - Azure Stream Analytics
    
-   ![Alt text](screenshots/screenshots\Azure_Stream_Analytics_job_topology.png )
+   ![Alt text](screenshots/Azure_Stream_Analytics_job_topology.png )
 
 - Azure Cosmos 
 
