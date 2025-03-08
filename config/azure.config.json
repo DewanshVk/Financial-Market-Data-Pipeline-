@@ -1,0 +1,10 @@
+{
+    "eventHub": {
+      "name": "stock-data",
+      "consumerGroup": "$Default"
+    },
+    "cosmosDb": {
+      "database": "StockDB",
+      "container": "averages"
+    }
+  }
