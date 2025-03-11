@@ -35,6 +35,7 @@ Key Features
 - Power BI
 - Apache Airflow
 - Docker
+- Git
 
 ## Setup Instructions
 ### Prerequisites
