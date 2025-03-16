@@ -42,23 +42,34 @@ Key Features
 - Docker installed
 - Azure account with Event Hub, Stream Analytics, ADLS, and CosmosDB configured
 
+## Setup Instructions
+
+### Prerequisites
+- Docker installed
+- Azure account with Event Hub, Stream Analytics, ADLS, and CosmosDB configured
+
 ### Steps
+
 1. Clone the repository:
    ```sh
    gh repo clone DewanshVk/Financial-Market-Data-Pipeline-
    cd Financial-Market-Data-Pipeline-
    ```
-2. Start Event Hub setup (modify config as needed).
-3. Deploy the Stream Analytics job in Azure.
-4. Run the producer to fetch and stream stock data:
+2. Install dependencies:
+   ```sh
+   pip install -r requirements.txt
+   ```
+3. Start Event Hub setup (modify config as needed).
+4. Deploy the Stream Analytics job in Azure.
+5. Run the producer to fetch and stream stock data:
    ```sh
    python src/producer/producer.py
    ```
-5. Run the consumer to receive and store data:
+6. Run the consumer to receive and store data:
    ```sh
    python src/test_consumer/consumer.py
    ```
-6. Use Power BI to connect to CosmosDB and visualize data.
+7. Use Power BI to connect to CosmosDB and visualize data.
 
 ## Screenshots
 Visual representations of key components are located in the `screenshots/` directory:
