@@ -26,6 +26,28 @@ Key Features
 6. **Orchestration:** Apache Airflow manages the data pipeline workflow.
 7. **Containerization:** The entire setup is containerized using Docker.
 
+## **Data Model**
+
+### **Table: `stock_averages`**
+This table stores the average stock prices along with the window end time.
+
+| **Column Name**    | **Data Type**    | **Description**                     |
+|---------------------|-----------------|-------------------------------------|
+| `id`                | INT (PK)        | Unique ID (Primary Key)             |
+| `ticker`            | VARCHAR(10)     | Stock symbol (e.g., GOOGL, AMZN)    |
+| `avg_price`         | FLOAT           | Average price                       |
+| `window_end`        | DATETIME        | Window end timestamp                |
+| `created_at`        | TIMESTAMP       | Timestamp of data insertion         |
+
+### **Sample Data**
+| **id** | **ticker** | **avg_price**   | **window_end**           | **created_at**           |
+|--------|-----------|-----------------|--------------------------|--------------------------|
+| 1      | GOOGL     | 171.91          | 2025-03-06 18:44:00       | 2025-03-06 18:45:00       |
+| 2      | AMZN      | 200.24          | 2025-03-06 18:44:00       | 2025-03-06 18:45:00       |
+| 3      | TSLA      | 260.37          | 2025-03-06 18:44:00       | 2025-03-06 18:45:00       |
+| 4      | NVDA      | 118.66          | 2025-03-06 18:44:00       | 2025-03-06 18:45:00       |
+| 5      | AMD       | 105.73          | 2025-03-06 18:44:00       | 2025-03-06 18:45:00       |
+
 ## Tech Stack
 - Python
 - Azure Event Hub
