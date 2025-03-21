@@ -2,17 +2,8 @@
 
 ## Overview
 Overview
-This project builds a real-time financial market data pipeline to fetch, process, and analyze stock market data using Azure services and visualize it in Power BI.
 
 This project is a real-time financial market data pipeline that fetches stock market data, processes it, and visualizes it in real-time. It uses Azure services for streaming and storage, Power BI for dashboards, and Apache Airflow to automate the workflow. I built it to explore stock market trends and sharpen my data engineering skills.
-
-Key Features
-* Live Data Streaming: Fetches stock market data using the Yahoo Finance API and streams it via Azure Event Hub.
-* Real-Time Processing: Azure Stream Analytics processes incoming data for analysis.
-* Cloud Storage & Querying: Processed data is stored in Azure Data Lake Storage (ADLS) and CosmosDB for structured querying.
-* Insights & Visualization: Power BI provides real-time dashboards for financial market trends.
-* Automation & Orchestration: Apache Airflow automates and schedules pipeline tasks.
-* Containerized Deployment: The entire setup is Dockerized for easy deployment and scalability.
 
 ### Key Features
 - **Live Data**: Pulls stock data from Yahoo Finance and streams it through Azure Event Hubs.
@@ -153,7 +144,6 @@ Also, hooking up Power BI to Cosmos DB was a bit of a headache at first—connec
 - **ML Predictions**: Add a machine learning model to forecast stock prices.
 - **More Data**: Pull in extra sources like news or economic data for better insights.
 - **Fancier Dashboards**: Upgrade the Power BI visuals with more metrics.
-
 
 ## Contribution
 Feel free to fork the repo and submit a PR with improvements!
